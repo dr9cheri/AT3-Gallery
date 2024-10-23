@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Images by Hastags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e4ddc8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #342b29;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #b58174;
+            color: #7b5146;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #29190e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Search Images by Hastags</h1>
+      <form action="/search" method="post">
+         <input type="text" name="hashtags" placeholder="Enter hashtags separated by commas">
+         <button type="submit">Search</button>
+    </form>
+    </div>
+</body>
+</html>

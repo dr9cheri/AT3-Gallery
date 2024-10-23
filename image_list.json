@@ -1,0 +1,9 @@
+[
+    {"URL": "../static/images/babypanda.jpg", "hashtag": ["panda", "animal"]},
+    {"URL": "../static/images/panda.jpg", "hashtag": ["panda", "animal"]},
+    {"URL": "../static/images/pandaintree.jpg", "hashtag": ["panda", "animal"]},
+    {"URL": "../static/images/sleeppanda.jpg", "hashtag": ["panda", "animal"]},
+    {"URL": "../static/images/Cynstaring.png", "hashtag": ["cyn", "murderdrones"]},
+    {"URL": "../static/images/CynJumpscare2.png", "hashtag": ["cyn", "murderdrones"]},
+    {"URL": "../static/images/AminotwantedN.png", "hashtag": ["cyn", "murderdrones"]}
+  ]

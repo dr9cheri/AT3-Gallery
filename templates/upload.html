@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image with Hastags</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eea990; 
+        }
+        .container {
+            background-color: #aa6f73;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px; 
+        }
+        input[type="file"], input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #854442;
+            color: #be9b7b;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4b3832;
+        }
+        .instruction {
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #5d140e;
+        }
+    </style>
+ </head>
+
+<body>
+    <div class="container">
+    <h1>Upload Image with Hastags</h1>
+    <div class="instruction">
+        <p><strong>Instruction</strong></p>
+        <p>1. Click on the "Chosen File" button to select an Image from your computer</p>
+        <p>2. Enter Hashtag separted by commas in the next box below the file input. For example: <em>#sunsets, #beach, #videogames</em></p>
+        <p>3. Click the "Upload" button to upload the image along with the hashtags.</p>
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <input type="text" name="hashtags" placeholder="Enter hashtags separated by commas">
+        <button type="submit">Upload</button>
+        <a href="/" class="back-button">
+            <button type="button">Back</button>
+        </a>
+    </form>
+</body>
+</html>
